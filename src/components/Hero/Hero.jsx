@@ -11,7 +11,7 @@ export default function Hero () {
         className='w-full h-screen bg-cover bg-center bg-no-repeat -mb-10'
         style={{ backgroundImage: heroImageUrl }}
       >
-        <div ClaccName='relative z-10 flex flex-col items-center justify-center h-full'>
+        <div ClassName='relative z-10 flex flex-col items-center justify-center h-full'>
           <h1 className='text-white text-4xl font-bold'>LETS BUILD YOUR DREAM PROJECT</h1>
           <h3 className='text-white text-xl font-extralight'>WITH EACH STEP ALONG THE WAY</h3>
          </div>
