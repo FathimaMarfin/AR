@@ -16,13 +16,11 @@ export default function Navbar() {
             <nav className="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
                 <div className="container mx-auto flex items-center justify-between px-4  sm:px-6 lg:px-30 rg:px-30 h-16 md:h-20">
 
-                    {/* Logo */}
                     <div className="cursor-pointer left-0 right-0">
                         <h1 className="font-bold text-3xl leading-none">AR</h1>
                         <h2 className="font-semibold text-xl">ENGINEERING</h2>
                     </div>
 
-                    {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="block md:hidden text-black p-2"
@@ -34,7 +32,6 @@ export default function Navbar() {
                         )}
                     </button>
 
-                    {/* Desktop Nav */}
                     <div className="hidden md:flex items-center gap-10">
                         {navLinks.map((link) => (
                             <a
@@ -51,7 +48,7 @@ export default function Navbar() {
                             </a>
                         ))}
 
-                        {/* Get a Quote Button */}
+
                         <a
                             href="#quote"
                             onClick={() => setActiveLink("#quote")}
@@ -62,7 +59,7 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                {/* Mobile Menu Dropdown */}
+
                 {isMenuOpen && (
                     <div className="md:hidden bg-white border-t shadow-lg">
                         <div className="flex flex-col px-6 py-4 space-y-4">
@@ -85,7 +82,6 @@ export default function Navbar() {
                                 </a>
                             ))}
 
-                            {/* Get a Quote Button Mobile */}
                             <a
                                 href="#quote"
                                 onClick={() => {

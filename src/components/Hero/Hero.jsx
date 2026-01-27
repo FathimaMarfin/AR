@@ -1,18 +1,23 @@
 import React from 'react';
 
-const heroImageUrl = "url('../src/img/download.jpg')";
-const heroImageUrl2 = "url('../src/img/blue.jpg')";
-const heroImageUrl3 = "url('../src/img/3.jpg')";
+import heroImg1 from "../../img/download.jpg";
+import heroImg2 from "../../img/blue.jpg";
+import heroImg3 from "../../img/3.jpg";
+import jubailImg from "../../img/Jubail.jpg";
+import tabukImg from "../../img/Tabuk.jpg";
+import yanbuImg from "../../img/yanbu.jpg";
+import bahrainImg from "../../img/bahrain.jpg";
+
 
 export default function Hero () {
   return (
     <section className='w-full bg-neutral-800 flex flex-col gap-8  '> 
       <div 
         className='w-full h-screen bg-cover bg-center bg-no-repeat -mb-10'
-        style={{ backgroundImage: heroImageUrl }}
+        style={{ backgroundImage: `url(${heroImg1})` }}
       >
-        <div ClaccName='relative z-10 flex flex-col items-center justify-center h-full'>
-          <h1 className='text-white text-4xl font-bold'>LETS BUILD YOUR DREAM PROJECT</h1>
+        <div className='relative z-10 flex flex-col items-center justify-center h-full'>
+          <h1 className=' text-white text-4xl font-bold'>LETS BUILD YOUR DREAM PROJECT</h1>
           <h3 className='text-white text-xl font-extralight'>WITH EACH STEP ALONG THE WAY</h3>
          </div>
       </div>
@@ -57,7 +62,8 @@ export default function Hero () {
 
       <div 
         className='w-full h-screen bg-cover -mt-20 bg-center bg-no-repeat '
-        style={{ backgroundImage: heroImageUrl2 }}
+        style={{ backgroundImage: `url(${heroImg2})` }}
+
       >
         <div className='relative flex items-center justify-center h-full z-10'>
           <div className="absolute h-full z-10 mt-70 text-white font-extrabold text-4xl">
@@ -99,7 +105,8 @@ export default function Hero () {
       
       <div 
         className='w-full h-[80vh] bg-cover -mt-20 bg-center bg-no-repeat '
-        style={{ backgroundImage: heroImageUrl3 }}
+        style={{ backgroundImage: `url(${heroImg3})` }}
+
         >
         
         <div className='relative flex items-center justify-center h-full z-10 gap-75 '>
@@ -136,7 +143,7 @@ export default function Hero () {
         <h1 className='font-bold text-5xl text-center text-white'>OUR BRANCHES ACROSS THE MIDDLE EAST</h1>
         <div className=' flex py-7 '>
           <div className='group relative overflow-hidden'>
-            <img className='px-1 w-[52vh] h-[65vh]' src="../src/img/Jubail.jpg" alt="jubail" />
+            <img className='px-1 w-[52vh] h-[65vh]' src={jubailImg}  alt="jubail" />
             <div className='absolute inset-0 bg-black/70 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out '  ></div>
             <div className='absolute inset-0 flex flex-col justify-center text-center p-4 text-white'>
               <h1 className='mt-55 transform group-hover:-translate-y-5 transition-transform duration-500 text-5xl font-bold'>JUBAIL</h1>
@@ -147,7 +154,7 @@ export default function Hero () {
           </div>
 
           <div className='group relative overflow-hidden'>
-            <img className='px-1 w-[52vh] h-[65vh] relative' src="../src/img/Tabuk.jpg" alt="tabuk" />
+            <img className='px-1 w-[52vh] h-[65vh] relative' src={tabukImg} alt="tabuk" />
             <div className=' absolute inset-0 bg-black/70 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out '  ></div>
             <div className='absolute inset-0 flex flex-col justify-center text-center p-4 text-white'>
               <h1 className='mt-55 transform group-hover:-translate-y-5 transition-transform duration-500 text-5xl font-bold'>TABUK</h1>
@@ -158,7 +165,7 @@ export default function Hero () {
           </div>
 
           <div className='group relative overflow-hidden'>
-            <img className='px-1 w-[52vh] h-[65vh] relative' src="../src/img/yanbu.jpg" alt="yanbu"  />
+            <img className='px-1 w-[52vh] h-[65vh] relative' src={yanbuImg} alt="yanbu"  />
             <div className=' absolute inset-0 bg-black/70 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out '  ></div>
             <div className='absolute inset-0 flex flex-col justify-center text-center p-4 text-white'>
               <h1 className='mt-55 transform group-hover:-translate-y-5 transition-transform duration-500 text-5xl font-bold'>YANBU</h1>
@@ -169,7 +176,7 @@ export default function Hero () {
           </div>
 
           <div className='group relative overflow-hidden'>
-            <img className='px-1 w-[52vh] h-[65vh] relative' src="../src/img/bahrain.jpg" alt="bahrain" />
+            <img className='px-1 w-[52vh] h-[65vh] relative' src={bahrainImg} alt="bahrain" />
             <div className=' absolute inset-0 bg-black/70 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out '  ></div>
             <div className='absolute inset-0 flex flex-col justify-center text-center p-4 text-white'>
               <h1 className='mt-55 transform group-hover:-translate-y-5 transition-transform duration-500 text-5xl font-bold'>BAHRAIN</h1>
