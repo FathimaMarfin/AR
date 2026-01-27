@@ -1,4 +1,4 @@
-import {createBrowserRouter,} from "react-router";
+import {createBrowserRouter} from "react-router";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
