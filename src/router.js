@@ -8,22 +8,22 @@ import Quote from "./components/Quote";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Hero/>
+    element: <Hero/>,
   },
 
   {
     path: "/about",
-    element: <About/>
+    element: <About/>,
   },
 
   {
     path: "/services",
-    element: <Services/>
+    element: <Services/>,
   },
 
   {
     path: "/quote",
-    element: <Quote/>
+    element: <Quote/>,
   },
 ]); 
 
