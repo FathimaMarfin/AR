@@ -15,20 +15,14 @@ export default function Navbar() {
         <>
             <nav className="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
                 <div className="container mx-auto flex items-center justify-between px-4  sm:px-6 lg:px-30 rg:px-30 h-16 md:h-20">
-<<<<<<< HEAD
 
-=======
                     
->>>>>>> ddaa2321f12cdc6a753aa0a1da7f6d62538aa550
                     <div className="cursor-pointer left-0 right-0">
                         <h1 className="font-bold text-3xl leading-none">AR</h1>
                         <h2 className="font-semibold text-xl">ENGINEERING</h2>
                     </div>
-<<<<<<< HEAD
 
-=======
                     
->>>>>>> ddaa2321f12cdc6a753aa0a1da7f6d62538aa550
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="block md:hidden text-black p-2"
@@ -39,11 +33,8 @@ export default function Navbar() {
                             <HiMenu className="w-7 h-7" />
                         )}
                     </button>
-<<<<<<< HEAD
 
-=======
                     
->>>>>>> ddaa2321f12cdc6a753aa0a1da7f6d62538aa550
                     <div className="hidden md:flex items-center gap-10">
                         {navLinks.map((link) => (
                             <a
@@ -60,10 +51,7 @@ export default function Navbar() {
                             </a>
                         ))}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> ddaa2321f12cdc6a753aa0a1da7f6d62538aa550
                         <a
                             href="#quote"
                             onClick={() => setActiveLink("#quote")}
@@ -74,10 +62,7 @@ export default function Navbar() {
                     </div>
                 </div>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> ddaa2321f12cdc6a753aa0a1da7f6d62538aa550
                 {isMenuOpen && (
                     <div className="md:hidden bg-white border-t shadow-lg">
                         <div className="flex flex-col px-6 py-4 space-y-4">
